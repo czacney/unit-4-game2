@@ -1,3 +1,8 @@
+$(document).ready(function(){
+    var computerNumber=Math.floor(Math.random()(113=+13))
+
+$('#scoreToMatch').text(Random);
+
 var computerNumber;
 var crystal1;
 var crystal2;
@@ -23,6 +28,16 @@ function resetGame() {
 
     $("#crystal1Area").data("amount", crystal1);
     console.log($("#crystal1Area").data("amount"));
+
+    $("#crystal2Area").data("amount", crystal2);
+    console.log($("#crystal2Area").data("amount"));
+
+    $("#crystal3Area").data("amount", crystal3);
+    console.log($("#crystal3Area").data("amount"));
+
+    $("#crystal4Area").data("amount", crystal4);
+    console.log($("#crystal4Area").data("amount"));
+
 }
 
 // display wins
