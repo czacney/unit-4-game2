@@ -5,21 +5,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Crystal Collector</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
 <body>
-    <div id="computerNumberArea"> </div>
-    <div id="crystal1Area"></div>
-    <div id="crystal2Area"></div> 
-    <div id="crystal3Area"></div> 
-    <div id="crystal4Area"></div> 
-    
-    <script
-        src="https://code.jquery.com/jquery-3.4.1.slim.js"
-        integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI=" crossorigin="anonymous">
-        </script>
-        <script src="game.js"></script>
+
+    <div class="header">
+        <h1>Crystal Collector</h1>
+    </div>
+
+    <div class="instructions">
+        <div class="row">
+            ><h2>How to play:</h2>
+            <p>You will be given a random number at the start of the game.
+                <br>
+                There are four crystals below. By clicking on a crystal you will add a specific amount of points to your
+                total score.
+                <br>
+                You win the game by matching your total score to random number, you lose the game if your total score
+                goes
+                above the random number.
+                <br>
+                The value of each crystal is hidden from you until you click on it.
+                <br>
+                Each time when ythe game starts, the game will change the values of each crystal.
+            </p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="numberToMatch">
+            <h2>Number To Match:
+                <span id="randomNumber"></span>
+            </h2>
+        </div>
+        <div class="winsAndLosses">
+            <h2>Wins:
+                <span id="numberWins"></span>
+                </br>
+                Losses:
+                <span id="numberLosses"></span>
+            </h2>
+        </div>
+
+        <div class="crystals">
+            <div class="container">
+                <img src="assets/images/blue.png" class=cryImage id="crystalArea1" alt="Blue Crystal">
+                <img src="assets/images/green.png" class=cryImage id="crystalArea2" alt="Green Crystal">
+                <img src="assets/images/red.png" class=cryImage id="crystalArea3" alt="Red Crystal">
+                <img src="assets/images/yellow.png" class=cryImage id="crystalArea4" alt="Yellow Crystal">
+            </div>
+
+            <div class="playerScore">
+                <h2>Total score is:
+                    <span id="finalTotal"></span>
+                </h2>
+            </div>
+
+            <script src="https://code.jquery.com/jquery-3.4.1.slim.js"
+                integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI=" crossorigin="anonymous">
+                </script>
+            <script src="game.js"></script>
 
 
 </body>
